@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSONPlaceholder Todo MCP Server</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #1f2937;
+        background: #f7f8fa;
+      }
+      body {
+        max-width: 720px;
+        margin: 64px auto;
+        padding: 0 24px;
+        line-height: 1.75;
+      }
+      main {
+        padding: 32px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+      }
+      code {
+        padding: 0.15em 0.4em;
+        border-radius: 5px;
+        background: #eef2f7;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>JSONPlaceholder Todo MCP Server</h1>
+      <p>このMCPサーバーはNetlify Functions上で稼働しています。</p>
+      <ul>
+        <li>MCPエンドポイント：<code>/mcp</code></li>
+        <li>ツール：<code>get_todo</code>（読み取り専用）</li>
+        <li>データ：JSONPlaceholderが提供するテスト用ダミーデータ</li>
+      </ul>
+      <p>
+        <code>/mcp</code>は通常のWebページではありません。Streamable HTTPに対応した
+        MCPクライアントから接続してください。
+      </p>
+    </main>
+  </body>
+</html>
